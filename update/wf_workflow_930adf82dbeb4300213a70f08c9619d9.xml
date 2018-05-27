@@ -1,0 +1,2885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["db0a93c2dbeb4300213a70f08c961987"],"activities":{},"subflows":[],"stages":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition table="x_snc_pi_med_inc_equipment_incident">planned_action!=^EQ<item endquery="false" field="planned_action" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>d30a93c2dbeb4300213a70f08c961986,087f174adbeb4300213a70f08c961965,320327cadbeb4300213a70f08c9619df,aebf574adbeb4300213a70f08c961969,d0b2e3cadbeb4300213a70f08c96197f,cdd227cadbeb4300213a70f08c9619d7,28526f8adbeb4300213a70f08c961984,33e16f8adbeb4300213a70f08c96194e,dd82a3cadbeb4300213a70f08c961903,db0a93c2dbeb4300213a70f08c961987</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>d30a93c2dbeb4300213a70f08c961986,087f174adbeb4300213a70f08c961965,320327cadbeb4300213a70f08c9619df,aebf574adbeb4300213a70f08c961969,d0b2e3cadbeb4300213a70f08c96197f,cdd227cadbeb4300213a70f08c9619d7,28526f8adbeb4300213a70f08c961984,33e16f8adbeb4300213a70f08c96194e,dd82a3cadbeb4300213a70f08c961903,db0a93c2dbeb4300213a70f08c961987</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>CNH - Broken Medical Equipment</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">d30a93c2dbeb4300213a70f08c961986</start>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 22:54:08</sys_created_on>
+        <sys_id>08d913c2dbeb4300213a70f08c961925</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:35:12</sys_updated_on>
+        <table>x_snc_pi_med_inc_equipment_incident</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="CNH - Broken Medical Equipment">930adf82dbeb4300213a70f08c9619d9</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>CNH - Broken Medical Equipment</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 22:54:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>930adf82dbeb4300213a70f08c9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CNH - Broken Medical Equipment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Medical Equipment Maintenance" source="x_snc_pi_med_inc">9f3c7361db6f0300213a70f08c96194f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Medical Equipment Maintenance">9f3c7361db6f0300213a70f08c96194f</sys_scope>
+        <sys_update_name>wf_workflow_930adf82dbeb4300213a70f08c9619d9</sys_update_name>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 22:54:08</sys_updated_on>
+        <table>x_snc_pi_med_inc_equipment_incident</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 22:54:08</sys_created_on>
+        <sys_id>d30a93c2dbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 22:54:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d30a93c2dbeb4300213a70f08c961986"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">d30a93c2dbeb4300213a70f08c961986</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 22:54:08</sys_created_on>
+        <sys_id>530a93c2dbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 22:54:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Task">9f4d1be5c0a8016400043d34ce066316</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Complete Testing</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>33e16f8adbeb4300213a70f08c96194e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>533</x>
+        <y>430</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=33e16f8adbeb4300213a70f08c96194e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>23326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>27326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>2b3223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>2b326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>2f326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>63326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>673223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>67326f8adbeb4300213a70f08c961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>67326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>6b326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>Assess whether repaired equipment is fit for service</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>6f326f8adbeb4300213a70f08c961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>6f326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>a33223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>Assess whether the affected equipment can be used by hospital staff</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>a3326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>a7326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>ab326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>af326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>e3326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>e7326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>x_snc_pi_med_inc_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>eb3223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>eb326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>ef3223cadbeb4300213a70f08c961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>ef326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>e7326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>x_snc_pi_med_inc_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>63326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>ef326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>2b3223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>67326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>27326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>eb326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>67326f8adbeb4300213a70f08c961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>673223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>ab326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>2f326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>e3326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>eb3223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>6f326f8adbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>23326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>af326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>6b326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>Assess whether repaired equipment is fit for service</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>a33223cadbeb4300213a70f08c961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>Assess whether the affected equipment can be used by hospital staff</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>a7326f8adbeb4300213a70f08c96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>2b326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>6f326f8adbeb4300213a70f08c961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>ef3223cadbeb4300213a70f08c961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33e16f8adbeb4300213a70f08c96194e</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>a3326f8adbeb4300213a70f08c96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Complete Testing">33e16f8adbeb4300213a70f08c96194e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:29:55</sys_created_on>
+        <sys_id>273223cadbeb4300213a70f08c961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:29:55</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Task">9f4d1be5c0a8016400043d34ce066316</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Complete Testing</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d0b2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:34:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>168</x>
+        <y>197</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d0b2e3cadbeb4300213a70f08c96197f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>10b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>14b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>Assess whether repaired equipment is fit for service</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>18b227cadbeb4300213a70f08c9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>18b2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>18b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>1cb2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>50b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>50b2e3cadbeb4300213a70f08c961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>54b227cadbeb4300213a70f08c9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>54b2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>54b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>58b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>5cb2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>90b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>x_snc_pi_med_inc_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>94b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>98b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>9cb2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>9cb2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>Assess whether the affected equipment can be used by hospital staff</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d0b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d4b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d8b2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d8b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>dcb2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>90b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>x_snc_pi_med_inc_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>1cb2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>98b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>54b227cadbeb4300213a70f08c9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>10b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>dcb2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>94b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>54b2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>50b2e3cadbeb4300213a70f08c961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>54b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d4b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>9cb2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>18b227cadbeb4300213a70f08c9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>18b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d8b2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>58b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>14b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>Assess whether repaired equipment is fit for service</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>9cb2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>Assess whether the affected equipment can be used by hospital staff</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>50b2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d0b2e3cadbeb4300213a70f08c961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>18b2e3cadbeb4300213a70f08c96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>d8b2e3cadbeb4300213a70f08c961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d0b2e3cadbeb4300213a70f08c96197f</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>5cb2e3cadbeb4300213a70f08c961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Complete Testing">d0b2e3cadbeb4300213a70f08c96197f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:53</sys_created_on>
+        <sys_id>5cb227cadbeb4300213a70f08c9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:53</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 22:54:08</sys_created_on>
+        <sys_id>db0a93c2dbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:34:13</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>636</x>
+        <y>592</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=db0a93c2dbeb4300213a70f08c961987"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Mark Close Complete</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:24</sys_created_on>
+        <sys_id>dd82a3cadbeb4300213a70f08c961903</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:32:17</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>535</x>
+        <y>508</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=dd82a3cadbeb4300213a70f08c961903"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>dd82a3cadbeb4300213a70f08c961903</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:24</sys_created_on>
+        <sys_id>d19263cadbeb4300213a70f08c9619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:24</sys_updated_on>
+        <value>state=3^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>dd82a3cadbeb4300213a70f08c961903</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:24</sys_created_on>
+        <sys_id>d19263cadbeb4300213a70f08c9619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:24</sys_updated_on>
+        <value>state=3^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Mark Close Complete">dd82a3cadbeb4300213a70f08c961903</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:24</sys_created_on>
+        <sys_id>999263cadbeb4300213a70f08c9619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:24</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Task">9f4d1be5c0a8016400043d34ce066316</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Repair Equipment</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>28526f8adbeb4300213a70f08c961984</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:34:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>184</x>
+        <y>351</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=28526f8adbeb4300213a70f08c961984"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>20526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>20526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>24526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>28526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>2c526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>2c526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>60526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>64526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>68526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:48</sys_updated_on>
+        <value>Repair Equipment</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>68526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>6c526f8adbeb4300213a70f08c961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>6c526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a0526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a4526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a4526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a8526f8adbeb4300213a70f08c961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a8526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>ac526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e0526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e0526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:48</sys_updated_on>
+        <value>Repair Equipment</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e4526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>x_snc_pi_med_inc_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e8526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>ec526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e4526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>x_snc_pi_med_inc_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>60526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>ec526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>68526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>64526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>24526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e8526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a8526f8adbeb4300213a70f08c961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a4526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a8526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>2c526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e0526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>2c526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>6c526f8adbeb4300213a70f08c961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>20526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>ac526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>68526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:48</sys_updated_on>
+        <value>Repair Equipment</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>e0526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:48</sys_updated_on>
+        <value>Repair Equipment</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a4526f8adbeb4300213a70f08c961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>28526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>6c526f8adbeb4300213a70f08c961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>20526f8adbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>28526f8adbeb4300213a70f08c961984</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>a0526f8adbeb4300213a70f08c961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Repair Equipment">28526f8adbeb4300213a70f08c961984</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:16</sys_created_on>
+        <sys_id>60526f8adbeb4300213a70f08c961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:16</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set In Progress</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:33:25</sys_created_on>
+        <sys_id>320327cadbeb4300213a70f08c9619df</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>390</x>
+        <y>50</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=320327cadbeb4300213a70f08c9619df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>320327cadbeb4300213a70f08c9619df</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:33:25</sys_created_on>
+        <sys_id>b20327cadbeb4300213a70f08c9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:25</sys_updated_on>
+        <value>state=2^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>320327cadbeb4300213a70f08c9619df</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:33:25</sys_created_on>
+        <sys_id>b20327cadbeb4300213a70f08c9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:25</sys_updated_on>
+        <value>state=2^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set In Progress">320327cadbeb4300213a70f08c9619df</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:33:25</sys_created_on>
+        <sys_id>f60327cadbeb4300213a70f08c9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:25</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set In Progress</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:32:28</sys_created_on>
+        <sys_id>cdd227cadbeb4300213a70f08c9619d7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:34:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>171</x>
+        <y>274</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=cdd227cadbeb4300213a70f08c9619d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cdd227cadbeb4300213a70f08c9619d7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:32:28</sys_created_on>
+        <sys_id>41d227cadbeb4300213a70f08c9619d8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:32:50</sys_updated_on>
+        <value>state=2^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cdd227cadbeb4300213a70f08c9619d7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:32:28</sys_created_on>
+        <sys_id>41d227cadbeb4300213a70f08c9619d8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:32:50</sys_updated_on>
+        <value>state=2^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set In Progress">cdd227cadbeb4300213a70f08c9619d7</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:32:28</sys_created_on>
+        <sys_id>85d227cadbeb4300213a70f08c9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:32:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Switch">f84eda480a0a3c1800a6fa8c7badf346</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Switch on Planned Action</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>aebf574adbeb4300213a70f08c961969</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:47</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>601</x>
+        <y>52</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=aebf574adbeb4300213a70f08c961969"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>aebf574adbeb4300213a70f08c961969</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>6acf574adbeb4300213a70f08c961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:19:12</sys_updated_on>
+        <value/>
+        <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>aebf574adbeb4300213a70f08c961969</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>a6cf574adbeb4300213a70f08c961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:19:12</sys_updated_on>
+        <value>field</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>aebf574adbeb4300213a70f08c961969</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>e2cf574adbeb4300213a70f08c961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:19:12</sys_updated_on>
+        <value>planned_action</value>
+        <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>aebf574adbeb4300213a70f08c961969</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>a6cf574adbeb4300213a70f08c961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:19:12</sys_updated_on>
+        <value>field</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>aebf574adbeb4300213a70f08c961969</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>6acf574adbeb4300213a70f08c961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:19:12</sys_updated_on>
+        <value/>
+        <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>aebf574adbeb4300213a70f08c961969</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>e2cf574adbeb4300213a70f08c961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:19:12</sys_updated_on>
+        <value>planned_action</value>
+        <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch on Planned Action">aebf574adbeb4300213a70f08c961969</activity>
+        <condition>activity.result == 'fix_internally'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fix Internally</name>
+        <order>2</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>26cf574adbeb4300213a70f08c961956</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:57</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch on Planned Action">aebf574adbeb4300213a70f08c961969</activity>
+        <condition>activity.result == 'order_replacement'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Order Replacement</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:12</sys_created_on>
+        <sys_id>a6cf574adbeb4300213a70f08c961956</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:57</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait for decision on Planned Action</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:18:09</sys_created_on>
+        <sys_id>087f174adbeb4300213a70f08c961965</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:18:49</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+        <x>175</x>
+        <y>40</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=087f174adbeb4300213a70f08c961965"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>087f174adbeb4300213a70f08c961965</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:18:09</sys_created_on>
+        <sys_id>138f174adbeb4300213a70f08c961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:18:09</sys_updated_on>
+        <value>planned_action!=^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>087f174adbeb4300213a70f08c961965</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:18:09</sys_created_on>
+        <sys_id>978f174adbeb4300213a70f08c961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:18:09</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>087f174adbeb4300213a70f08c961965</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:18:09</sys_created_on>
+        <sys_id>138f174adbeb4300213a70f08c961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:18:09</sys_updated_on>
+        <value>planned_action!=^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>087f174adbeb4300213a70f08c961965</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:18:09</sys_created_on>
+        <sys_id>978f174adbeb4300213a70f08c961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:18:09</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait for decision on Planned Action">087f174adbeb4300213a70f08c961965</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:18:09</sys_created_on>
+        <sys_id>9b8f174adbeb4300213a70f08c961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:18:09</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">85d227cadbeb4300213a70f08c9619d8</condition>
+        <from display_value="Set In Progress">cdd227cadbeb4300213a70f08c9619d7</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:33:02</sys_created_on>
+        <sys_id>01f227cadbeb4300213a70f08c9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:02</sys_updated_on>
+        <to display_value="Repair Equipment">28526f8adbeb4300213a70f08c961984</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f60327cadbeb4300213a70f08c9619df</condition>
+        <from display_value="Set In Progress">320327cadbeb4300213a70f08c9619df</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:33:42</sys_created_on>
+        <sys_id>7613a7cadbeb4300213a70f08c96198e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:42</sys_updated_on>
+        <to display_value="Switch on Planned Action">aebf574adbeb4300213a70f08c961969</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fix Internally">26cf574adbeb4300213a70f08c961956</condition>
+        <from display_value="Switch on Planned Action">aebf574adbeb4300213a70f08c961969</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:40</sys_created_on>
+        <sys_id>8da2e3cadbeb4300213a70f08c96197c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:32:01</sys_updated_on>
+        <to display_value="Complete Testing">d0b2e3cadbeb4300213a70f08c96197f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">530a93c2dbeb4300213a70f08c961987</condition>
+        <from display_value="Begin">d30a93c2dbeb4300213a70f08c961986</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 22:54:08</sys_created_on>
+        <sys_id>930a93c2dbeb4300213a70f08c961988</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:18:48</sys_updated_on>
+        <to display_value="Wait for decision on Planned Action">087f174adbeb4300213a70f08c961965</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">999263cadbeb4300213a70f08c9619b5</condition>
+        <from display_value="Mark Close Complete">dd82a3cadbeb4300213a70f08c961903</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:30</sys_created_on>
+        <sys_id>a292e3cadbeb4300213a70f08c961978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:30</sys_updated_on>
+        <to display_value="End">db0a93c2dbeb4300213a70f08c961987</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">60526f8adbeb4300213a70f08c961989</condition>
+        <from display_value="Repair Equipment">28526f8adbeb4300213a70f08c961984</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:30:57</sys_created_on>
+        <sys_id>aa7263cadbeb4300213a70f08c96191d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:30:57</sys_updated_on>
+        <to display_value="Complete Testing">33e16f8adbeb4300213a70f08c96194e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">273223cadbeb4300213a70f08c961943</condition>
+        <from display_value="Complete Testing">33e16f8adbeb4300213a70f08c96194e</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:31:34</sys_created_on>
+        <sys_id>ab9263cadbeb4300213a70f08c961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:31:34</sys_updated_on>
+        <to display_value="Mark Close Complete">dd82a3cadbeb4300213a70f08c961903</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5cb227cadbeb4300213a70f08c9619a1</condition>
+        <from display_value="Complete Testing">d0b2e3cadbeb4300213a70f08c96197f</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:32:57</sys_created_on>
+        <sys_id>b7e227cadbeb4300213a70f08c96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:32:57</sys_updated_on>
+        <to display_value="Set In Progress">cdd227cadbeb4300213a70f08c9619d7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">9b8f174adbeb4300213a70f08c961971</condition>
+        <from display_value="Wait for decision on Planned Action">087f174adbeb4300213a70f08c961965</from>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 23:19:21</sys_created_on>
+        <sys_id>ecdf174adbeb4300213a70f08c9619b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 23:33:39</sys_updated_on>
+        <to display_value="Set In Progress">320327cadbeb4300213a70f08c9619df</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-10 22:54:08</sys_created_on>
+        <sys_id>1f0adf82dbeb4300213a70f08c9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-10 22:54:08</sys_updated_on>
+        <workflow_version display_value="CNH - Broken Medical Equipment">08d913c2dbeb4300213a70f08c961925</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=930adf82dbeb4300213a70f08c9619d9^sys_id!=08d913c2dbeb4300213a70f08c961925">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

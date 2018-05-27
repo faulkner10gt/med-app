@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Equipment Order" max_length="40" name="x_snc_pi_med_inc_equipment_order" sizeclass="1" type="collection">
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Model" max_length="32" name="model" reference="cmdb_model" reference_qual="cmdb_model_categoryLIKE3e8eae9013d69b4059c47f176144b082^EQ" reference_qual_condition="cmdb_model_categoryLIKE3e8eae9013d69b4059c47f176144b082^EQ" type="reference"/>
+        <element label="Order number" max_length="80" name="order_number" type="string"/>
+    </element>
+</database>

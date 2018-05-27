@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_pi_med_inc_equipment_order" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Equipment Order - Default view" name="x_snc_pi_med_inc_equipment_order" related_list="NULL" sys_domain="global" view="Default view">d25e3690131a9b4059c47f176144b05c</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>sysapproval_approver.sysapproval</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>chris.faulkner</sys_created_by>
+            <sys_created_on>2018-05-22 03:16:24</sys_created_on>
+            <sys_id>925e3690131a9b4059c47f176144b05d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chris.faulkner</sys_updated_by>
+            <sys_updated_on>2018-05-22 03:16:24</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Equipment Order - Default view</calculated_name>
+            <filter/>
+            <name>x_snc_pi_med_inc_equipment_order</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>chris.faulkner</sys_created_by>
+            <sys_created_on>2018-05-22 03:16:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d25e3690131a9b4059c47f176144b05c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Equipment Order - Default view</sys_name>
+            <sys_package display_value="Medical Equipment Maintenance" source="x_snc_pi_med_inc">9f3c7361db6f0300213a70f08c96194f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Medical Equipment Maintenance">9f3c7361db6f0300213a70f08c96194f</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_pi_med_inc_equipment_order_null</sys_update_name>
+            <sys_updated_by>chris.faulkner</sys_updated_by>
+            <sys_updated_on>2018-05-22 03:16:24</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

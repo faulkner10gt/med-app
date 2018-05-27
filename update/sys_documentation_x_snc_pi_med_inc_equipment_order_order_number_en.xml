@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="order_number" label="Order number" language="en" table="x_snc_pi_med_inc_equipment_order">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>order_number</element>
+            <help/>
+            <hint/>
+            <label>Order number</label>
+            <language>en</language>
+            <name>x_snc_pi_med_inc_equipment_order</name>
+            <plural>Order numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chris.faulkner</sys_created_by>
+            <sys_created_on>2018-05-22 02:42:07</sys_created_on>
+            <sys_id>d886f69813d69b4059c47f176144b096</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Order number</sys_name>
+            <sys_package display_value="Medical Equipment Maintenance" source="x_snc_pi_med_inc">9f3c7361db6f0300213a70f08c96194f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Medical Equipment Maintenance">9f3c7361db6f0300213a70f08c96194f</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_pi_med_inc_equipment_order_order_number_en</sys_update_name>
+            <sys_updated_by>chris.faulkner</sys_updated_by>
+            <sys_updated_on>2018-05-22 02:42:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

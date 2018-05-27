@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <enforce_license>log</enforce_license>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_model>none</license_model>
+        <logo/>
+        <menu/>
+        <name>Medical Equipment Maintenance</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_snc_pi_med_inc</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description>Handling repairs and replacement of medical devices</short_description>
+        <source>x_snc_pi_med_inc</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-09 12:06:32</sys_created_on>
+        <sys_id>9f3c7361db6f0300213a70f08c96194f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>chris.faulkner</sys_updated_by>
+        <sys_updated_on>2018-05-25 20:37:03</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role display_value="x_snc_pi_med_inc.user" name="x_snc_pi_med_inc.user">f5ff44b9db6f0300213a70f08c961965</user_role>
+        <vendor/>
+        <vendor_prefix/>
+        <version>0.0.2.888</version>
+    </sys_app>
+</record_update>

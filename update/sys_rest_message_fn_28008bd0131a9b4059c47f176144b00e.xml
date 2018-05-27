@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>TS18 Med Vendor [ Default GET ]</qualified_name>
+        <rest_endpoint>https://piemeademo.service-now.com/api/x_pisn_ts18medsupp/v1/equipment/</rest_endpoint>
+        <rest_message display_value="TS18 Med Vendor">f9df7ad0131a9b4059c47f176144b09f</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>chris.faulkner</sys_created_by>
+        <sys_created_on>2018-05-22 03:23:38</sys_created_on>
+        <sys_id>28008bd0131a9b4059c47f176144b00e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Medical Equipment Maintenance" source="x_snc_pi_med_inc">9f3c7361db6f0300213a70f08c96194f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Medical Equipment Maintenance">9f3c7361db6f0300213a70f08c96194f</sys_scope>
+        <sys_update_name>sys_rest_message_fn_28008bd0131a9b4059c47f176144b00e</sys_update_name>
+        <sys_updated_by>chris.faulkner</sys_updated_by>
+        <sys_updated_on>2018-05-22 03:23:38</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

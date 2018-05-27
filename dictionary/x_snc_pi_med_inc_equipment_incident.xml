@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="x_snc_workplace_he_case_base" label="Equipment Incident" max_length="40" name="x_snc_pi_med_inc_equipment_incident" type="collection">
+        <element choice="1" label="Planned action" max_length="40" name="planned_action" type="choice">
+            <choice>
+                <element label="Fix Internally" value="fix_internally"/>
+                <element label="Order Replacement" value="order_replacement"/>
+            </choice>
+        </element>
+    </element>
+</database>

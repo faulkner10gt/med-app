@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Equipment Incident">c17f44b9db6f0300213a70f08c96192c</application>
+        <filter/>
+        <name>Equipment Incidents</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_pi_med_inc.equipment_incident_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2018-01-09 13:30:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c97f44b9db6f0300213a70f08c96192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Equipment Incidents</sys_name>
+        <sys_package display_value="Medical Equipment Maintenance" source="x_snc_pi_med_inc">9f3c7361db6f0300213a70f08c96194f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Medical Equipment Maintenance">9f3c7361db6f0300213a70f08c96194f</sys_scope>
+        <sys_update_name>sys_ui_module_c97f44b9db6f0300213a70f08c96192d</sys_update_name>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2018-01-09 13:30:29</sys_updated_on>
+        <table>x_snc_pi_med_inc_equipment_incident</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>
